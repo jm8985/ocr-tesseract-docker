@@ -51,7 +51,7 @@ def upload_file():
       
       # perform OCR on the processed image
       #text = pytesseract.image_to_string(Image.open(ofilename))
-      text = pytesseract.image_to_data(Image.open(ofilename))
+      text = pytesseract.image_to_data(Image.open(ofilename), lang='spa')
       
       # remove the processed image
       os.remove(ofilename)
